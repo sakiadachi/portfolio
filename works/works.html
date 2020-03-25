@@ -6,26 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saki Adachi</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style/style_works.css">
 </head>
 
 <body>
     <header>
         <div class="title">
-            <img src="/img/logo_round_bl.png" class="logo">
-        </div>
-        <div class="nav">
-            <ul>
-                <li>
-                    <a href="#About">About</a>
-                </li>
-                <li>
-                <a href="#Works">Works<a>
-                </li>
-                <li>
-                <a href="#Contact">Contact</a>
-                </li>
-            </ul>
+            <button onclick ="topFunction()" id="toTop" title= "Go to top"></a>
+            </button>
         </div>
     </header>
 
@@ -36,25 +24,42 @@
         </ul>
     </section>
 
+    <section id="Portfolio">
 
-    <section id="Works">
-        <h1 class="contents-title">> Works</h1>
-        <h2 class="contents-explanation">
-        “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </h2>
 
-        <div class="container">
-            <div class="box" id="one"></div>
-            <div class="box" id="two"></div>
-            <div class="box" id="three"></div>
-            <div class="box" id="four"></div>
-            <div class="box" id="five"></div>
-            <div class="box" id="six"></div>
-        </div>
+            <div class="portfolio__project 01" id="project01" data-cat="web">
+                <a href="" title="01">
+                    <div class="portfolio__project__preview">
+                        <img src="../img/topimg.png" alt="webdesign" width="600px">
+                    </div>
+                    <div class="portfolio__project__preview">
+                        <img src="../img/topimg.png" alt="webdesign" width="600px">
+                    </div>
+                    <div class="portfolio__project__preview">
+                        <img src="../img/topimg.png" alt="webdesign" width="600px">
+                    </div>
+
+                    <p>BLALALALALALALALALALALALA</p>
+                    <div class="portfolio__project__description">
+                        <div class="info-wrapper">
+                            <h3 class="portfolio__project__name">Web design</h3>
+                            <p class="@portfolio__project__category"> #Web design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="container">
+           　　　　<div class="box" id="works02"></div>
+           　　　　<div class="box" id="works03"></div>
+         　　　　  <div class="box" id="works04"></div>
+         　　　　  <div class="box" id="works05"></div>
+        　　　　   <div class="box" id="works06"></div>
+         　  </div>
     </section>
 
-    <section id="Contact">
+
+    <!-- <footer>
         <h1 class="contents-title">> Contact</h1>
         <h2 class="contents-explanation">
         “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -66,12 +71,9 @@
             <p><a href="https://www.instagram.com/88sa_88/">instagram</a></p>
             <p><a href="https://www.behance.net/sakiadachi1">Behance</a></p>
         </div>
-    </section>
+    </footer> -->
 
-    <footer>
-    </footer>
-
-    <script src="./js/index.js" type="text/javascript"></script>
+    <script src="../index.js" type="text/javascript"></script>
 
 </body>
 

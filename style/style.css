@@ -1,3 +1,5 @@
+@import url("./button.css");
+
 html {
 	scroll-behavior: smooth;
 }
@@ -5,9 +7,9 @@ html {
 body {
 	display: grid;
 	grid-template-columns: 30px repeat(2, 0.6fr) 1fr 30px;
-	grid-template-rows: 80px 0.6fr repeat(2, 1fr) 0.6fr 0.1fr;
+	grid-template-rows: 80px 0.1fr 0.4fr 1fr 0.1fr 0.1fr;
 	justify-content: center;
-	font-family: Courier, 'Courier New', monospace;
+	font-family: 'Muli',sans-serif;
 	color: #333;
 }
 
@@ -18,20 +20,17 @@ header {
 	grid-area: 1 / 1 / 2 / 6;
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid #ddd;
+	/* border-bottom: 1px solid #ddd; */
 	position: fixed;
 	top: 0;
 	overflow: hidden;
 	background-color: white;
 	width: 100%;
 }
-
-.logo {
-	width: 50px;
+.title {
 	margin-left: 30px;
-	padding-top: 5px;
-}
 
+}
 .nav {
 	width: 100%;
 	transition: ease 0.3s all;
@@ -68,19 +67,20 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: baseline;
-  padding-top: 50px;
-  border-bottom: 1px solid #333;
+    padding-top: 50px;
+    /* border-bottom: 1px solid #333; */
 }
 
 section#top {
 	grid-area: 2 / 2 / 3 / 6;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	align-items: left;
 	justify-content: space-between;
-	background-image: url('/img/topimg01.png');
+	background-image: url('../img/topimg01.png');
+	background-size: contain ;
 	background-repeat: no-repeat;
-	background-size: contain;
 	background-position: bottom right;
 }
 
@@ -109,28 +109,25 @@ ul.links {
 a:visited{
 	color: blue;
 }
-.top-illust {
-	grid-area: 2 / 3 / 3 / 5;
-}
 
 section#About {
 	grid-area: 3 / 2 / 4 / 5;
 }
 
-section#Works {
+section#portfolio {
 	grid-area: 4 / 2 / 5 / 5;
 }
 
 h1 {
 	font-size: 2em;
-	font-family: Courier, 'Courier New', monospace;
+	font-family: 'Muli',sans-serif;
 	font-weight: 800;
 }
 
 h2 {
 	font-size: 1.2em;
 	font-weight: 500;
-	font-family: Courier, 'Courier New', monospace;
+	font-family: 'Muli',sans-serif;
 }
 
 .contents-title {
@@ -152,11 +149,42 @@ h2 {
 	border: 1px solid #333;
 	margin-right: 30px;
 	margin-bottom: 30px;
-	background-color: beige;
+	align-content: center;
 }
 
-.box img{
-	width: 280px;
+.box:hover .image {
+	opacity: 0.3;
+}
+.box:hover .info {
+	opacity: 1;
+}
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: auto;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.info {
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 
@@ -173,3 +201,6 @@ footer {
 	text-align: center;
 	background-color: darkslategray;
 }
+
+
+/* Portfolio section*/

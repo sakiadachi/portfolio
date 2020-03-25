@@ -1,0 +1,185 @@
+@import url("./button.css");
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: grid;
+	grid-template-columns: 30px repeat(2, 0.6fr) 1fr 30px;
+	grid-template-rows: 80px 0.6fr repeat(2, 1fr) 0.6fr 0.1fr;
+	justify-content: center;
+	font-family: Courier, 'Courier New', monospace;
+	color: #333;
+}
+
+
+/* Header */
+
+header {
+	grid-area: 1 / 1 / 2 / 6;
+	display: flex;
+	align-items: center;
+	/* border-bottom: 1px solid #ddd; */
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	background-color: white;
+	width: 100%;
+}
+.title {
+	margin-left: 30px;
+
+}
+
+.nav {
+	width: 100%;
+	transition: ease 0.3s all;
+}
+
+.nav ul {
+	margin-right: 15%;
+	text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.nav a{
+  text-decoration: none;
+}
+
+.nav li :hover{
+  background-color: yellow;
+}
+.nav :visited{
+  color: #333;
+}
+
+/* Main */
+
+section {
+	background-color: white;
+	font-family: 'Avenir', 'Helvetica Neue', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: baseline;
+    padding-top: 50px;
+    /* border-bottom: 1px solid #333; */
+}
+
+section#top {
+	grid-area: 2 / 2 / 3 / 6;
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+	justify-content: space-between;
+	background-image: url('/img/topimg01.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom right;
+}
+
+.top-container {
+	grid-area: 2 / 2 / 3 / 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.top-text01 {
+	line-height: 0.4em;
+	font-size: 1.4em;
+	font-weight: 700;
+	text-align: left;
+	display: block;
+	flex-direction: column;
+}
+
+ul.links {
+	font-size: 1.4em;
+	color: blue;
+	font-weight: 500;
+	list-style: none;
+}
+a:visited{
+	color: blue;
+}
+.top-illust {
+	grid-area: 2 / 3 / 3 / 5;
+}
+
+section#About {
+	grid-area: 3 / 2 / 4 / 5;
+}
+
+section#Works {
+	grid-area: 4 / 2 / 5 / 5;
+}
+
+h1 {
+	font-size: 2em;
+	font-family: Courier, 'Courier New', monospace;
+	font-weight: 800;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 500;
+	font-family: Courier, 'Courier New', monospace;
+}
+
+.contents-title {
+	align-items: left;
+	color: blue;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 50px;
+}
+
+.box {
+	width: 280px;
+	height: 280px;
+	border: 1px solid #333;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	background-color: beige;
+}
+
+.box img{
+	width: 280px;
+}
+
+
+section#Contact {
+	grid-area: 5 / 2 / 6 / 5;
+}
+
+
+.work-img {
+    width: 60%;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+	grid-area: 6 / 1 / 7 / 6;
+	display: block;
+	text-align: center;
+	background-color: darkslategray;
+}
