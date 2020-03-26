@@ -73,6 +73,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: baseline;
+	margin-bottom: 80px;
 }
 
 section#top {
@@ -86,6 +87,7 @@ section#top {
 	background-size: auto 75%;
 	background-repeat: no-repeat;
 	padding-bottom: 80px;
+
 }
 
 .top-container {
@@ -148,9 +150,10 @@ img.icon {
 /* About*/
 
 section#About {
-	grid-area: 3 / 2 / 4 / 5;
+	grid-area: 3 / 1 / 4 / 6;
 	padding-top: 80px;
-	margin-bottom: 150px;
+	background-color: gold;
+
 }
 
 .about-container {
@@ -159,7 +162,8 @@ section#About {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	padding-top: 100px;
+	padding-top: 30px;
+	padding-bottom: 80px;
 
 }
 
@@ -193,14 +197,14 @@ section#portfolio {
 }
 
 h1.contents-title {
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-family: 'Courier New', Courier, monospace;
 	font-weight: 600;
 }
 
 
 h2.contents-title {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: 500;
 	font-family: 'Muli',sans-serif;
 	text-align: left;
