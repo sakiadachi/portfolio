@@ -21,10 +21,10 @@
                     <a href="#About">About</a>
                 </li>
                 <li>
-                <a href="#Portfolio">Portfolio<a>
+                    <a href="#portfolio">Portfolio<a>
                 </li>
                 <li>
-                <a href="#Contact">Contact</a>
+                    <a href="#Contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -42,8 +42,8 @@
                 <a href="#About">
                     <li>> More About me</li>
                 </a>
-                <a href="#Works">
-                    <li>> Works
+                <a href="#portfolio">
+                    <li>> Portfolio
                         <li>
                 </a>
                 <a href="#Contact">
@@ -62,10 +62,11 @@
 
     <section id="About">
         <h1 class="contents-title">> About</h1>
-        <h2 class="contents-explanation">
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </h2>
+        <p class="contents-explanation">
+            I am a freelance visual designer who also codes. With a strong passion in graphic design, I create digital products user-friendly and fun to use. Currently, I study at Udacity Front-end nanodegree program and work for companies in Japan as a freelance designer.
+            Skills : HTML, SCSS/CSS, Javascript, Node.js, npm, webpack
+            Adobe XD, Photoshop, Illustrator. 
+        </p>
         <div class="profile">
             <img src="./img/sa-min.jpg" width="220px" height="150px">
             <div>
@@ -85,25 +86,40 @@
             </h4>
             <ul class="filters__list">
                 <li class="filters__label is-active"> all </li>
-                <li class="filters__label" data-cat"web"> web design</li>
+                <li class="filters__label" data-cat"graphic"> Graphic design</li>
+                <li class="filters__label" data-cat="3d">3D Design</li>
                 <li class="filters__label" data-cat="personal">personal projects</li>
             </ul>
         </div>
 
         <div class="container">
 
-            <div class="box" id="works01">
-                <!-- <a href="works/works.html" title="01" class="project-container"> -->
-                    <img src="img/logo_round_bl.png" alt="webdesign" class="image">
-                        <div class="middle">
-                            <div class="info">
-                                <h3 class="project-name">Web design</h3>
-                                <p class="project-category"> #Web design</p>
+            <div class="box" id="works01"> 
+                    <img src="img/website01.png" alt="webdesign" class="image">
+                        <div class="project-info">
+                            <div class="project-category">
+                                <a href="works/works.html">Website design</a>
                             </div>
                         </div>
-                    </a>
             </div>
-            <div class="box" id="works03"></div>
+
+            <div class="box" id="works02"> 
+                <img src="img/sunshineLOGO.png" alt="webdesign" class="image">
+                    <div class="project-info">
+                        <div class="project-category">
+                            <a href="works/works.html">Dry cleaning brand</a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="box" id="works03"> 
+                <img src="img/IMG_5546-3.jpg" alt="3D" class="image">
+                    <div class="project-info">
+                        <div class="project-category">
+                            <a href="works/works.html">g coasters</a>
+                        </div>
+                    </div>
+            </div>
             <div class="box" id="works04"></div>
             <div class="box" id="works05"></div>
             <div class="box" id="works06"></div>
