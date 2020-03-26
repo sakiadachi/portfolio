@@ -7,7 +7,7 @@ html {
 
 body {
 	display: grid;
-	grid-template-columns: 30px repeat(2, 0.6fr) 1fr 30px;
+	grid-template-columns: 60px repeat(2, 0.6fr) 1fr 60px;
 	grid-template-rows: 80px 0.6fr 0.6fr 1fr 0.1fr 0.1fr;
 	justify-content: center;
 	font-family: 'Muli',sans-serif;
@@ -69,13 +69,10 @@ header {
 /* Main */
 
 section {
-	/* background-color: white; */
 	font-family: 'Avenir', 'Helvetica Neue', sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: baseline;
-	margin-bottom: 50px;
-    /* border-bottom: 1px solid #333; */
 }
 
 section#top {
@@ -86,36 +83,22 @@ section#top {
 	align-items: left;
 	background-image: url(../img/topimg.png);
 	background-position: right bottom;
-	background-size: contain;
+	background-size: auto 75%;
 	background-repeat: no-repeat;
+	padding-bottom: 80px;
 }
+
 .top-container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 }
-/* .top-image{
-	width: 60%;
-	align-items: flex-end;
-	display: flex;
-}
-
-img.top-image {
-	width: 100%;
-	bottom: 0;
-	background-image: url(../img/topimg.png);
-	background-size: contain;
-} */
-
 
 .top-text01 {
 	width: fit-content;
 	font-size: 1.4em;
 	font-weight: 800;
-	text-align: left;
-
 	padding: 10px 10px 10px 20px;
 }
 
@@ -166,24 +149,33 @@ img.icon {
 
 section#About {
 	grid-area: 3 / 2 / 4 / 5;
-	padding-top: 50px;
+	padding-top: 80px;
+	margin-bottom: 150px;
 }
 
 .about-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
+	padding-top: 100px;
+
 }
 
 .about-text {
 	width: 55%;
 	padding: 30px;
+	/* border: 1px solid blue; */
+	border-radius: 10px;
+}
+.about-img {
+	width: 25%;
 }
 
+
 .about-image{
-	width: 40%;
-	background-color: tomato;
+	width: 100%;
 	height: auto;
 }
 
@@ -196,6 +188,8 @@ section#About {
 
 section#portfolio {
 	grid-area: 4 / 2 / 5 / 5;
+	padding-top: 80px;
+	margin-bottom: 150px;
 }
 
 h1.contents-title {
@@ -215,6 +209,8 @@ h2.contents-title {
 
 section#Contact {
 	grid-area: 5 / 2 / 6 / 5;
+	padding-top: 80px;
+	margin-bottom: 150px;
 }
 
 
@@ -226,6 +222,3 @@ footer {
 	text-align: center;
 	background-color: darkslategray;
 }
-
-
-/* Portfolio section*/
