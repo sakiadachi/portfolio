@@ -8,14 +8,14 @@ li.filters__list {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	/* margin: 50px; */
+	margin-top: 50px;
 }
 
 .box,
 .box * {
     box-sizing: border-box;
     width: 250px;
-    height: 250px;
+	height: 250px;    
 }
 
 
@@ -24,7 +24,7 @@ li.filters__list {
     display: inline-block;
     overflow: hidden;
     max-width: 100%;
-    border: 15px solid transparent;
+	border: 20px solid transparent;
 }
 
 .box img {
@@ -58,6 +58,7 @@ li.filters__list {
 .box .project-category {
 	text-align: center;
 	font-size: 15px;
+	width: 100%;
     display: inline-block;
     position: absolute;
 	top: 100%;
