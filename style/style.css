@@ -12,11 +12,10 @@ body {
 	grid-template-columns: 1fr;
 	grid-template-rows: 50px 0.45fr 0.4fr 1fr 0.4fr 100px;
 	width: 100%;
-	justify-content: center;
-	align-content: center;
-	font-family: 'Avenier','Helvetica Neue',sans-serif;
+	font-family: 'Courier New', Courier, monospace;
 	color: #333;
 	margin: 0;
+	/* background-color: rgb(252, 240, 225); */
 }
 section {
 	display: flex;
@@ -33,16 +32,17 @@ header {
 	top: 0;
 	overflow: hidden;
 	background-color: white;
-    width: 100%;
+	width: 100%;
+	z-index: 1;
 }
 
 section#top {
 	grid-area: 2 / 1 / 3 / 2;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
 	align-items: left;
-	background-image: url(../img/topimg.png);
+	/* background-image: url(../img/topimg01.png); */
+	background: round;
 	background-position: bottom;
 	background-size: 100% auto ;
 	background-repeat: no-repeat;
@@ -53,24 +53,33 @@ section#About {
 	grid-area: 3 / 1 / 4 / 2;
 	display: flex;
 	flex-direction: column;
-	background-color: gold;
-	align-items: center;
+	/* background-color: gold; */
+	padding-top: 50px;
 }
+.about-text {
+	width: 100%;
+}
+
 section#portfolio {
 	grid-area: 4 / 1 / 5 / 2;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	justify-content: center;
 }
 
 section#Contact {
 	grid-area: 5 / 1 / 6 / 2;
-	background-color: gold;
+	/* background-color: gold; */
+	padding-top: 50px;
 }
 
 footer {
 	grid-area: 6 / 1 / 7 / 2;
 	display: block;
-	text-align: center;
-	background-color:rgb(6, 128, 42);
+	background-color:#ddd;
 }
+
+
 
 @media (min-width: 600px) and (max-width: 900px) {
 	body {
@@ -78,15 +87,15 @@ footer {
 		grid-template-columns: 30px repeat(2, 0.6fr) 1fr 30px;
 		grid-template-rows: 80px 0.6fr 0.6fr 1fr 0.1fr 0.3fr;
 	}
-	section {
+	/* section {
 		display: flex;
 		flex-direction: column;
-	}
+	} */
 	#About,
 	#portfolio,
 	#Contact {
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	/* Header */
 	header {
@@ -96,12 +105,11 @@ footer {
 	}
 	/*Top */
 	section#top {
-		grid-area: 2 / 2 / 3 / 5;
+		grid-area: 2 / 2 / 3 / 6;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
 		align-items: left;
-		background-image: url(../img/topimg.png);
 		background-position: bottom right;
 		background-size: auto 70%;
 		background-repeat: no-repeat;
@@ -109,14 +117,18 @@ footer {
 	/* Portfolio */
 	section#About {
 		grid-area: 3 / 1 / 4 / 6;
-		background-color: gold;
+		display: flex;
+		flex-direction: row;
+	}
+	.about-container {
+		display: flex;
+		flex-direction: row;
 	}
 	section#portfolio {
 		grid-area: 4 / 2 / 5 / 5;
 	}
 	section#Contact {
 		grid-area: 5 / 1 / 6 / 6;
-		background-color: gold;
 	}
 	footer {
 		grid-area: 6 / 1 / 7 / 6;
@@ -129,7 +141,7 @@ footer {
 	body {
 		display: grid;
 		grid-template-columns: 60px repeat(2, 0.6fr) 1fr 60px;
-		grid-template-rows: 80px 0.6fr 0.6fr 1fr 0.1fr 0.3fr;
+		grid-template-rows: 80px 1fr 1fr 1fr 0.5fr 0.2fr;
 	}
 	/* Header */
 	header {
@@ -141,50 +153,49 @@ footer {
 	section#top {
 		grid-area: 2 / 2 / 3 / 5;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		flex-wrap: nowrap;
 		align-items: left;
-		background-image: url(../img/topimg.png);
-		background-position: bottom;
+		/* background-position: bottom right;
 		background-size: auto 75%;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat; */
 	}
 	/* Portfolio */
 	section#portfolio {
 		grid-area: 4 / 2 / 5 / 5;
-		padding-top: 40px;
 	}
 	section#About {
-		grid-area: 3 / 1 / 4 / 6;
+		grid-area: 3 / 2 / 4 / 5;
+	}
+	.about-container {
 		display: flex;
-		flex-direction: column;
-		background-color: gold;
+		flex-direction: row;
 	}
 	section#Contact {
-		grid-area: 5 / 1 / 6 / 6;
+		grid-area: 5 / 2 / 6 / 5;
 		padding-top: 80px;
 		padding-bottom: 150px;
-		background-color: gold;
-		margin-bottom: 0 !important;
+
 	}
 	footer {
 		grid-area: 6 / 1 / 7 / 6;
 		display: block;
 		text-align: center;
-		background-color:rgb(6, 128, 42);
 	}
 }
 
 
-.about-text {
-	width: 55%;
-	padding: 30px;
-}
+
 .about-img {
-	width: 25%;
+	width: 30%;	
+	height: 280px;
+	background: white;
+	border: 2px solid #333;
+	border-style: dashed;
+	margin-right: 30px;
 }
-.about-image{
+/* .about-image{
 	width: 100%;
 	height: auto;
-}
+} */
 

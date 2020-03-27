@@ -1,14 +1,23 @@
-
-
 .top-container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
 
+
+@media (min-width: 901px){
+	.top-container {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
 .top-text01 {
 	width: fit-content;
-	font-size: 1.4em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 1.7em;
 	font-weight: 800;
 }
 
@@ -50,3 +59,52 @@ img.icon {
 	height: 25px;
 }
 
+
+@keyframes square-animation {
+	0%{
+    }
+    20%{
+        background: #00e34b;
+		/* transform: scale(1) rotate(20deg) ; */
+		transform: translateX(-100px);
+	}    
+	30%{
+		background: #5744ff;
+		transform: scale(1) translate(100px);
+	}
+    40%{
+		background: #e2ea00;
+		transform: scale(1) translate(50px);
+		/* transform: translateX(-100); */
+        /* transform: scale(1) rotate(40deg); */
+    }
+    60%{
+		background: #ea8400;
+		transform: scale(1) translate(50px);
+        /* transform: scale(1) rotate(100deg); */
+    }    
+    80%{
+		background: #ea0000;
+		transform: scale(1) translate(50px);
+        /* transform: scale(1) rotate(180deg); */
+    }    
+    100%{
+		background: #00b3e3;
+		transform: scale(1) translate(50px);
+        /* transform: scale(1) rotate(240deg); */
+    }
+}
+
+.background {
+	width: 100%;
+	height: 80%;
+	z-index: -1;
+}
+.square {
+	animation-name: square-animation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	width: 200px;
+	height: 200px;
+	border-radius: 30px;
+}
