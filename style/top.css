@@ -1,0 +1,52 @@
+
+
+.top-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-text01 {
+	width: fit-content;
+	font-size: 1.4em;
+	font-weight: 800;
+}
+
+p {
+	line-height: 1.4em;
+}
+
+.top-text02 {
+	width: 50%;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1em;
+}
+
+ul.links {
+	font-size: 1em;
+	line-height: 1.6em;
+	color: blue;
+	font-weight: 600;
+	list-style: none;
+	text-align: left;
+}
+
+a:visited{
+	color: blue;
+}
+
+ul.socialmedia,
+li.socialmedia {
+	list-style: none;
+	display: flex;
+}
+
+li.icon {
+	border: 10px solid transparent;
+}
+
+img.icon {
+	width: 25px;
+	height: 25px;
+}
+

@@ -1,3 +1,20 @@
+/* portfolio */
+
+
+
+h1.contents-title {
+	font-size: 1.5em;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 600;
+}
+
+
+h2.contents-title {
+	font-size: 1.3em;
+	font-weight: 500;
+	text-align: left;
+}
+
 li.filters__list {
     display: inline-block;
     vertical-align: baseline;

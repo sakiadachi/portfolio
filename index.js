@@ -23,3 +23,19 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+// mouse cursor
+
+// var $circle = $('.circle');
+
+// function moveCircle(e) {
+// 	TweenLite.to($circle, 0.3, {
+//     css: {
+//       left: e.pageX,
+//       top: e.pageY
+//     }
+//   });
+// }
+
+// $(window).on('mousemove', moveCircle);
