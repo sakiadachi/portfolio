@@ -17,14 +17,14 @@
             </button>
         </div>
         <div class="nav-header">
-            <button class="toggle">
+            <!-- <button class="toggle">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </button> -->
         </div>
         <div class="nav">
-            <ul class="navcollaps">
+            <ul class="nav-ul">
                 <li><a href="#About">About</a></li>
                 <li><a href="#portfolio">Portfolio<a></li>
                 <li><a href="#Contact">Contact</a></li>
@@ -33,51 +33,34 @@
     </header>
 
     <section id="top">
+        <div class="background">
+            <div class="square"></div>
+        </div>
         <div class="top-container">
             <div class="top-text01">
                 <p class="top-text">Hi there, I am Saki Adachi.<br>
                     Visual designer based in Tokyo,
                     who codes and illustrates.</p>
             </div>
-
             <ul class="links">
-                <a href="#About">
-                    <li>> More About me</li>
-                </a>
-                <a href="#portfolio">
-                    <li>> Portfolio
-                        <li>
-                </a>
-                <a href="#Contact">
-                    <li>> Contact me here</li>
-                </a>
+                    <li><a href="#About"># More About me</a></li>
+                    <li><a href="#portfolio"># Portfolio</a><li>
+                    <li><a href="#Contact"># Contact me here</a></li>
             </ul>
-            <div class="top-text02">
-                <p>Email: <a href="mailto:sakiadachi.88@gmail.com">sakiadachi.88@gmail.com</a></p>
+            <div class="media">
+                <ul class="top-links">
+                    <li><a href="mailto:sakiadachi.88@gmail.com" title="email" target="_blank">sakiadachi.88@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/saki-adachi/" title="linkedin" target="_blank">Linkedin</a></li>
+                    <li><a href="https://www.instagram.com/88sa_88/" title="instagram" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.behance.net/sakiadachi1" title="behance" target="_blank">Behance</a></li>
+                    <li><a href="https://github.com/sakiadachi" title="github" target="_blank">Github</a></li>
+                </ul>
             </div>
-            <ul class="socialmedia">
-                <li class="icon">
-                    <a href="" target="_blank"><img src ="img/instagram.png" alt="instagram" class="icon"></a>
-                    
-                </li>
-                <li class="icon">
-                    <img src ="img/linkedin.png" alt="linkedin" class="icon">
-                </li>
-                <li class="icon">
-                    <img src ="img/twitter.png" alt="behance" class="icon">
-                </li>
-            </ul>
-        </div>
-        <!-- <div class="top-image">
-            <img src="img/topimg.png" alt="top-illust" class="top-image">
-        </div> -->
-        <div class="background">
-            <div class="square"></div>
         </div>
     </section>
 
     <section id="About">
-        <h1 class="contents-title">> About</h1>
+        <h1 class="contents-title"># About</h1>
         <div class="about-container">
             <div class="about-img">
             <!-- <img src="./img/sa-min.jpg" alt="profile picture" class="about-image"> -->
@@ -95,49 +78,61 @@
     </section>
 
     <section id="portfolio">
-        <h1 class="contents-title">> Portfolio</h1>
+        <h1 class="contents-title"># Portfolio</h1>
         <div class="container">
 
             <div class="box" id="works01"> 
-                    <img src="img/website01.png" alt="Graphic design" class="image">
-                        <div class="project-info">
-                            <div class="project-category">
-                                <a href="works/works.html">Graphic design</a>
-                            </div>
-                        </div>
+                <a href="works/works.html">
+                    <img src="img/ui-01.png" alt="Graphic design" class="image">
+                </a>
+                <div class="project-category">Graphic design</div>
             </div>
 
             <div class="box" id="works02"> 
-                <img src="img/img02.jpg" alt="uiux" class="image">
-                    <div class="project-info">
-                        <div class="project-category">
-                            <a href="works/works.html">UI / UX</a>
-                        </div>
-                    </div>
+                <a href="works/works.html">
+                    <img src="img/ui-02.png" alt="uiux" class="image">
+                </a>
+                <div class="project-category">UI / UX</div>
             </div>
 
             <div class="box" id="works03"> 
-                <img src="img/IMG_5546-3.jpg" alt="3D" class="image">
-                    <div class="project-info">
-                        <div class="project-category">
-                            <a href="works/works.html">3D Design</a>
-                        </div>
-                    </div>
+                <a href="works/works.html">
+                <img src="img/ui-03.png" alt="3D" class="image"></a>
+                <div class="project-category">3D Design</div>
             </div>
         </div>
     </section>
 
     <section id="Contact">
-        <h1 class="contents-title">> Contact</h1>
-        <h2 class="contents-explanation">
+        <h1 class="contents-title"># Contact</h1>
+        <h2 >
             Interested in working with me?
         </h2>
-        <div class="othersites">
-            <p><a href="mailto:sakiadachi.88@gmail.com" title="mail" target="_blank">sakiadachi.88@gmail.com</a></p>
-            <p><a href="https://www.linkedin.com/in/saki-adachi/" title="linkedin" target="_blank">Linkedin</a></p>
-            <p><a href="https://www.instagram.com/88sa_88/" title="instagram" target="_blank">instagram</a></p>
-            <p><a href="https://www.behance.net/sakiadachi1" title="behance" target="_blank">Behance</a></p>
-        </div>
+        <p><a href="mailto:sakiadachi.88@gmail.com" title="mail" target="_blank">sakiadachi.88@gmail.com</a></p>
+
+            <ul class="socialmedia">
+                <li class="icon">
+                    <a href="https://www.instagram.com/88sa_88/" title="instagram" target="_blank">
+                        <img src ="img/instagram.png" alt="instagram" class="icon">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://www.linkedin.com/in/saki-adachi/" title="linkedin" target="_blank">
+                        <img src ="img/linkedin.png" alt="linkedin" class="icon">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://github.com/sakiadachi" title="github" target="_blank">
+                        <img src ="img/github.png" alt="github" class="icon">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://www.behance.net/sakiadachi1" title="behance" target="_blank">
+                        <img src ="img/behance.png" alt="github" class="icon">
+                    </a>
+                </li>
+            </ul>
+
     </section>
 
     <footer>

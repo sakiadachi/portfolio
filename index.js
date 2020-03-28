@@ -39,3 +39,20 @@ function topFunction() {
 // }
 
 // $(window).on('mousemove', moveCircle);
+
+
+// function updateTransition() {
+//     var el = document.querySelector("div.square");
+     
+//     if (el) {
+//       el.className = "square1";
+//     } else {
+//       el = document.querySelector("div.square1");
+//       el.className = "square";
+//     }
+     
+//     return el;
+//   }
+  
+//   var intervalID = window.setInterval(updateTransition, 1000);
+  
