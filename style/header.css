@@ -21,12 +21,11 @@ ul.nav-ul >li {
   overflow: hidden;
   font-size: 1.1em;
   font-weight: 700;
+  margin-right: 20px;
 }
 ul.nav-ul > li > a{
-    padding:10px 10px;
-    margin-left: 5px;
-    line-height:30px;
-	text-decoration: none;
+    line-height: 30px;
+  	text-decoration: none;
 }
 ul.nav-ul > li > a:hover{
 	background: yellow;
