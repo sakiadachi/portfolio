@@ -37,6 +37,8 @@ p {
 	font-weight: 800;
 }
 
+/* social media links */
+
 ul.top-links {
 	width: 100%;
 	list-style: none;
@@ -44,14 +46,15 @@ ul.top-links {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-
 }
+
 ul.top-links > li {
 	width: fit-content;
 	padding: 10px;
 	border: 1px solid rgb(0, 17, 248);
 	margin: 0px 10px 10px 10px;
 }
+
 ul.top-links > li:hover {
 	background:rgb(0, 17, 248)
 }
@@ -66,7 +69,26 @@ ul.top-links > li >a:hover {
 }
 
 
+/* blue links */
+ul.links {
+	font-size: 1.3em;
+	line-height: 1.4em;
+	color: blue;
+	font-weight: 700;
+	list-style: none;
+	text-align: left;
+}
 
+ul.links li >a {
+	text-decoration: none;
+}
+ul.links li >a:hover {
+	background: yellow;
+}
+
+ul.socialmedia {
+	list-style: none;
+}
 
 
 

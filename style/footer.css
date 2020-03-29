@@ -1,0 +1,26 @@
+/* footer */
+li.icon {
+	display: inline-block;
+	vertical-align: bottom;
+	border: 10px solid transparent;
+}
+
+img.icon {
+	width: 40px;
+	height: 40px;
+}
+
+.footer > h2 {
+	text-align: center;
+}
+
+.footer-texts {
+	text-align: center;
+}
+
+footer >a {
+	font-size: 0.7em;
+	color: rgb(83, 83, 83);
+	text-decoration: none;
+	position: relative;
+}

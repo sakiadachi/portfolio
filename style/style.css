@@ -4,9 +4,13 @@
 @import url("./top.css");
 @import url("./header.css");
 @import url("./portfolio.css");
+@import url("./footer.css");
 
 html {
 	scroll-behavior: smooth;
+}
+a:visited{
+	color: inherit;
 }
 body {
 	display: grid;
@@ -172,41 +176,8 @@ footer {
 		padding-top: 30px;
 	}
 }
-/* top li */
-ul.links {
-	font-size: 1.3em;
-	line-height: 1.4em;
-	color: blue;
-	font-weight: 700;
-	list-style: none;
-	text-align: left;
-}
 
-a:visited{
-	color: inherit;
-}
-ul.links li >a {
-	text-decoration: none;
-}
-ul.links li >a:hover {
-	background: yellow;
-}
-
-ul.socialmedia {
-	list-style: none;
-}
-
-li.icon {
-	display: inline-block;
-	vertical-align: bottom;
-	border: 10px solid transparent;
-}
-
-img.icon {
-	width: 40px;
-	height: 40px;
-}
-
+/* About */
 .about-img {
 	width: 300px;	
 	height: 300px;
@@ -219,13 +190,25 @@ img.icon {
 	height: auto;
 }
 
+/* footer */
+li.icon {
+	display: inline-block;
+	vertical-align: bottom;
+	border: 10px solid transparent;
+}
+
+img.icon {
+	width: 40px;
+	height: 40px;
+}
+
 .footer > h2 {
 	text-align: center;
 }
+
 .footer-texts {
 	text-align: center;
 }
-
 
 footer >a {
 	font-size: 0.7em;
