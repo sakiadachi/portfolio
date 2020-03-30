@@ -57,7 +57,7 @@ body {
 	margin: 0;
 	display: grid;
 	grid-template-columns: 30px 0.3fr 1fr 30px;
-	grid-template-rows: 80px 1fr 0.2fr;
+	grid-template-rows: 80px 1fr 300px;
 }
 
 header {
@@ -116,14 +116,36 @@ p.work-title {
 
 /* container */
 
-.container {
+.container-row {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
+.container-column {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.box {
+	width: 300px;
+	height: auto;
+	border: 10px solid transparent;
+}
+.box-column {
+	width: 100%;
+	height: auto;
+	border: 10px solid transparent;
+}
 img.row {
+	width: 100%;
+	height: auto;
+}
+img.column {
 	width: 100%;
 	height: auto;
 	border: 20px solid transparent;
