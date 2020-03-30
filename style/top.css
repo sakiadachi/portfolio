@@ -55,7 +55,8 @@ ul.top-links > li {
 	margin: 0px 10px 10px 10px;
 }
 
-ul.top-links > li:hover {
+ul.top-links li:hover,
+ul.top-links li:active {
 	background:rgb(0, 17, 248)
 }
 
@@ -79,8 +80,14 @@ ul.links {
 	text-align: left;
 }
 
-ul.links li >a {
+ul.links a {
 	text-decoration: none;
+}
+ul.links a:hover {
+	text-decoration: underline;
+}
+ul.links a:visited {
+	color: rgb(0, 13, 197);
 }
 ul.links li >a:hover {
 	background: yellow;
@@ -89,9 +96,6 @@ ul.links li >a:hover {
 ul.socialmedia {
 	list-style: none;
 }
-
-
-
 
 
 /* animation */

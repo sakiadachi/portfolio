@@ -19,7 +19,7 @@ h3 {
 	font-weight: 500;
 }
 
-.container {
+#container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -27,7 +27,10 @@ h3 {
 	justify-content: center;
 	margin-top: 60px;
 }
-
+#category-container {
+	margin-top: 2em;
+	text-align: center;
+}
 .box {
     box-sizing: border-box;
     width: 250px;
@@ -38,37 +41,72 @@ h3 {
 	margin-right: 20px;
     max-width: 100%;
 	border: 15px solid transparent;
-	border-radius: 5px;
-
-}
-@media (min-width: 600px) and (max-width: 900px) {
-	.box {
-		width: 200px;
-		height: 200px;   
-	}
 }
 
+.scale-anm {
+  transform: scale(1);
+}
 
 
 .image {
+	position: absolute;
     width: 100%;
-    height: 100%;
-}
-.box img:hover,
-.box img:active {
-	background: yellow;
-	border-radius: 5px;
+	height: 100%;
+	left: 0;
 }
 
-.box .project-category {
-	text-align: center;
-	color: rgb(70, 70, 70);
-	font-size: 1.3em;
-	font-weight: 700;
+.box:hover .overlay {
+	display: block;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-    display: inline-block;
+	height: 100%;
+	background: rgba(0, 0, 0, 0);
+	transition: background 0.5s ease;
+  }
+  .gallery-title {
+	position: absolute;
+	width: 220px;
+	right: 0;
+	top: 80px;
+	font-weight: 700;
+	font-size: 1.5em;
 	text-align: center;
-	margin-top: 0.4em;
-}
+	text-transform: uppercase;
+	color: white;
+	z-index: 1;
+	transition: top .5s ease;
+  }
+  .box:hover .gallery-title {
+	  top: 50px;
+  }
+  .gallery-button {
+	position: absolute;
+	width: 220px;
+	left: 0;
+	bottom: 80px;
+	text-align: center;
+	opacity: 0;
+	transition: opacity .35s ease;
+  }
 
+  .gallery-button a {
+	width: 120px;
+	padding: 8px 15px 8px 15px;
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	border: solid 2px white;
+	border-radius: 5px;
+	z-index: 1;
+  }
 
+  .box:hover .gallery-button {
+	opacity: 1;
+  }

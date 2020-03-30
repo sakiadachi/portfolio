@@ -1,58 +1,22 @@
-// const pageTopBtn = document.getElementById('pagetop');
-// pageTopBtn.addEventListener("click", function () {
-//   const me = arguments.callee;
-//   const nowY = window.pageYOffset;
-//   window.scrollTo(0, Math.floor(nowY * 0.8));
-//   if (nowY > 0) {
-//     window.setTimeout(me, 10);
-//   }
-// });
+const buttons= document.getElementById('category-container').children;
+const items= document.getElementById('container').children;
 
-var toTop = document.getElementById('toTop');
+for (let i=0; i<buttons.length; i++) {
+    buttons[i].addEventListener("click", function(){
+        for (let j=0; j<buttons.length; j++) {
+            buttons[j].classList.remove("active")
+        }
+        this.classList.add("active")
+        const target = this.getAttribute("data-target");
 
-window.onclick = function ()  {scrollFunction()};
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.getElement.scrollTop > 20) {
-        toTop.style.display = "block";
-    } else {
-        toTop.style.display = "none";
-    }
+        for (let x=0; x<items.length; x++) {
+            items[x].style.display= "none";
+            if(items[x].getAttribute("data-id") == target) {
+                items[x].style.display ="block";
+            }
+            if(target == "all") {
+                items[x].style.display ="block";
+            }
+        }
+    })
 }
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-
-// mouse cursor
-
-// var $circle = $('.circle');
-
-// function moveCircle(e) {
-// 	TweenLite.to($circle, 0.3, {
-//     css: {
-//       left: e.pageX,
-//       top: e.pageY
-//     }
-//   });
-// }
-
-// $(window).on('mousemove', moveCircle);
-
-
-// function updateTransition() {
-//     var el = document.querySelector("div.square");
-     
-//     if (el) {
-//       el.className = "square1";
-//     } else {
-//       el = document.querySelector("div.square1");
-//       el.className = "square";
-//     }
-     
-//     return el;
-//   }
-  
-//   var intervalID = window.setInterval(updateTransition, 1000);
-  
