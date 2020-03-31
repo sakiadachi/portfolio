@@ -17,7 +17,7 @@ p {
 	width: 100%;
 	margin-top: 20px;
 	font-family: 'Courier New', Courier, monospace;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 @media (min-width: 901px){
@@ -37,8 +37,8 @@ p {
 .top-text01 {
 	width: fit-content;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 1.7em;
-	font-weight: 800;
+	font-size: 1.5em;
+	font-weight: 700;
 }
 
 /* social media links */
@@ -55,31 +55,31 @@ ul.top-links {
 ul.top-links > li {
 	width: fit-content;
 	padding: 10px;
-	border: 1px solid rgb(0, 17, 248);
+	border: 1px solid #333;
+	border-radius: 5px;
 	margin: 0px 10px 10px 10px;
 }
 
 ul.top-links li:hover,
 ul.top-links li:active {
-	background:rgb(0, 17, 248)
+	background:yellow;
 }
 
 ul.top-links > li >a {
 	color: inherit;
-	font-weight: 700;
+	font-weight: 600;
 	text-decoration: none;
 }
 ul.top-links > li >a:hover {
-	color: #fff;
+	color: #333;
 }
 
 
 /* blue links */
 ul.links {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	line-height: 1.4em;
-	color: blue;
-	font-weight: 700;
+	font-weight: 600;
 	list-style: none;
 	text-align: left;
 	margin-top: 20px;
@@ -92,7 +92,7 @@ ul.links a:hover {
 	text-decoration: underline;
 }
 ul.links a:visited {
-	color: rgb(0, 13, 197);
+	color: #333;
 }
 ul.links li >a:hover {
 	background: yellow;
@@ -129,8 +129,8 @@ ul.socialmedia {
 	animation-duration: 1.8s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	position: absolute;
 	right: 10%;
 	border-radius: 100px;
