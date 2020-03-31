@@ -31,12 +31,10 @@ button#toTop:focus{
     padding: .5rem 1rem;
     margin: 0;
     height: auto;
-    border: 1px solid;
-    border-radius: 5px;
     vertical-align: middle;
     -webkit-appearance: none;
-    color: #555;
-    background-color: rgba(0, 0, 0, 0);
+    /* color: #333; */
+    /* background-color: rgba(0, 0, 0, 0); */
 }
 
 .btn-cat:hover {
@@ -50,7 +48,7 @@ button#toTop:focus{
 }
 /* Add a dark background color to the active button */
 .btn-cat.active {
-  background-color: #666;
+  background-color: #333;
    color: white;
 }
 ::-moz-focus-inner {

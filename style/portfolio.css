@@ -7,12 +7,30 @@ h1.contents-title {
 }
 h1 {
 	font-size: 2em;
-	font-weight: 600;
+	font-weight: 700;
+	color: rgb(0, 72, 139);
+	margin-bottom: 10px;
+	text-decoration: underline;
 }
 h2 {
 	font-size: 1.5em;
 	font-weight: 500;
 	text-align: left;
+}
+.h2skill {
+	font-weight: 600;
+	color: rgb(0, 72, 139);
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.right {
+	text-align: right;
+}
+.right a{
+	padding: 10px 20px 10px 20px;
+	font-weight: 600;
+	color: #333;
+	background: rgba(253, 236, 0, 0.4)
 }
 h3 {
 	font-size: 1.2em;
@@ -23,7 +41,7 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: center;
+	text-align: center;
 	justify-content: center;
 	margin-top: 60px;
 }
@@ -37,8 +55,7 @@ h3 {
 	height: 250px;    
 	position: relative;
 	display: inline-block;
-	justify-content: space-between;
-	margin-right: 20px;
+	justify-content: flex-start;
     max-width: 100%;
 	border: 15px solid transparent;
 }
@@ -111,4 +128,10 @@ h3 {
 
   .box:hover .gallery-button {
 	opacity: 1;
+  }
+
+  .skill li {
+	  text-align: left;
+	  font-size: 1.1em;
+	  line-height: 1.2em;
   }
