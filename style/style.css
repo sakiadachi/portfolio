@@ -12,7 +12,7 @@ html {
 body {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 50px 0.3fr 0.4fr 1fr 0.3fr;
+	grid-template-rows: 50px 0.3fr 1fr 0.5fr;
 	width: 100%;
 	font-family: 'Courier New', Courier, monospace;
 	color: #333;
@@ -44,14 +44,14 @@ section#top {
 	margin-bottom: 20px;
 	padding-top: 20px;
 }
-
+/* 
 section#About {
 	grid-area: 3 / 1 / 4 / 2;
 	display: flex;
 	flex-direction: column;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	padding-top: 80px;
-}
+} */
 .about-text {
 	width: 100%;
 	display: flex;
@@ -72,13 +72,13 @@ section#About {
 	padding: 20px;
 }
 section#portfolio {
-	grid-area: 4 / 1 / 5 / 2;
+	grid-area: 3 / 1 / 4 / 2;
 	margin-bottom: 80px;
 	justify-content: space-between;
 }
 
 footer {
-	grid-area: 5 / 1 / 6 / 2;
+	grid-area: 4 / 1 / 5 / 2;
 	display: flex;
 	flex-direction: column;
 	background-color:#ddd;
@@ -93,7 +93,7 @@ footer {
 	body {
 		display: grid;
 		grid-template-columns: 20px repeat(2, 0.6fr) 1fr 20px;
-		grid-template-rows: 80px 0.4fr 0.3fr 1fr 0.2fr;
+		grid-template-rows: 80px 0.3fr 1fr 0.4fr;
 	}
 	#About,
 	#portfolio,
@@ -114,22 +114,22 @@ footer {
 		flex-wrap: nowrap;
 	}
 	/* Portfolio */
-	section#About {
+	/* section#About {
 		grid-area: 3 / 2 / 4 / 5;
 		margin-top: 0;
 		padding-top: 80px;
-	}
+	} */
 	.about-container {
 		display: flex;
 		flex-direction: row;
 	}
 	section#portfolio {
-		grid-area: 4 / 2 / 5 / 5;
+		grid-area: 3 / 2 / 4 / 5;
 		padding-top: 80px;
 		flex-wrap: nowrap;
 	}
 	footer {
-		grid-area: 5 / 1 / 6 / 6;
+		grid-area: 4 / 1 / 5 / 6;
 	}
 }
 
@@ -139,7 +139,7 @@ footer {
 	body {
 		display: grid;
 		grid-template-columns: 60px repeat(2, 0.6fr) 1fr 60px;
-		grid-template-rows: 80px 0.4fr 0.3fr 1fr 0.3fr;
+		grid-template-rows: 80px 0.4fr 1fr 0.5fr;
 	}
 	#About,
 	section#portfolio,
@@ -165,19 +165,19 @@ footer {
 	}
 	/* Portfolio */
 	section#portfolio {
-		grid-area: 4 / 2 / 5 / 5;
+		grid-area: 3 / 2 / 4 / 5;
 		padding-top: 80px;
 	}
-	section#About {
+	/* section#About {
 		grid-area: 3 / 2 / 4 / 5;
 		margin-top: 0;
-	}
+	} */
 	/* .about-container {
 		display: flex;
 		flex-direction: row;
 	} */
 	footer {
-		grid-area: 5 / 1 / 6 / 6;
+		grid-area: 4 / 1 / 65/ 6;
 		display: flex;
 		flex-direction: column;
 		padding-top: 30px;
@@ -186,7 +186,7 @@ footer {
 
 /* About */
 .about-img {
-	width: 60%;
+	width: 200px;
 	object-fit: cover;
 	border-radius: 50%;
 	margin-right: 30px;
