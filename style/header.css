@@ -1,41 +1,9 @@
-/* Header */
-.title {
-	margin-left: 30px;
+nav {
+    width: 100%;
+    text-align: right;
+    background-color: rgb(30, 30, 30);
 }
 
-.nav {
-	width: 100%;
-	font-family: Courier,'Courier New', monospace;
+button {
+    justify-content: right;
 }
-.nav a:visited {
-  color: inherit;
-}
-
-/* .nav a:hover {
-  color: rgb(0, 13, 197);
-} */
-
-.nav a {
-  /* padding: 10px; */
-  text-decoration: none;
-}
-ul.nav-ul {
-	text-align: center;
-	list-style: none;
-	overflow: hidden;
-}
-
-ul.nav-ul li {
-  display: inline-block;
-  vertical-align: baseline;
-  overflow: hidden;
-  font-size: 1em;
-  font-weight: 600;
-  margin-right: 20px;
-}
-
-ul.nav-ul a:hover{
-  background: yellow;
-  text-decoration: underline;
-}
-

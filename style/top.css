@@ -2,9 +2,6 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-}
-p {
 	line-height: 1.4em;
 }
 
@@ -13,8 +10,7 @@ p {
 	flex-direction: column;
 	width: 100%;
 	margin-top: 20px;
-	font-family: 'Courier New', Courier, monospace;
-	font-size: 0.9em;
+	font-size: 1.3em;
 }
 
 @media (min-width: 901px){
@@ -24,29 +20,37 @@ p {
 		text-align: left;
 	}
 	.media {
-		width: 60%;
-		font-family: 'Courier New', Courier, monospace;
-		font-size: 1em;
+		width: 50%;
 	}
 }
 
 
-.top-text01 {
-	width: fit-content;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 1.5em;
-	font-weight: 700;
+.topbox {
+	width: 50%;
+	height: 50px;
+	background-color:rgba(253, 237, 90, 0.788);
+	border-radius: 10px;
 }
 .top-text02 {
-	font-size: 1.1em;
-	font-weight: 600;
+	font-family: 'Futura', sans-serif;
+	line-height: 1.2em;
+	color: #333;
+}
+.top-text03 {
+	font-family: 'Futura', sans-serif;
+	/* line-height: 0.9em; */
+	color: rgb(119, 119, 119);
+	font-size: 0.8em;
+	margin-bottom: 30px;
+
 }
 .top-text02 a {
 	color: inherit;
+	border-radius: 5px;
 	text-decoration: underline;
 }
 .top-text02 a:hover {
-	background-color: yellow;
+	background-color: salmon;
 }
 .top-text02 a:visited {
 	color: inherit;
@@ -55,65 +59,37 @@ p {
 /* social media links */
 
 ul.top-links {
+	font-family: 'Futura', sans-serif;
 	width: 100%;
 	list-style: none;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+	margin-top: 20px;
 }
 
 ul.top-links > li {
 	width: fit-content;
-	padding: 10px;
-	border: 1px solid #333;
+	padding: 5px 10px;
 	border-radius: 5px;
-	/* text-decoration: underline dotted; */
-	margin: 30px 0px 0px 10px;
+	margin-right: 20px;
 }
 
 ul.top-links li:hover,
 ul.top-links li:active {
-	background:yellow;
+	background-color: salmon;
 }
 
 ul.top-links > li >a {
 	color: inherit;
-	font-weight: 600;
-	text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 500;
+	text-decoration: underline;
 }
 ul.top-links > li >a:hover {
 	color: #333;
 }
-
-
-/* blue links */
-ul.links {
-	font-size: 1.1em;
-	line-height: 1.4em;
-	font-weight: 600;
-	list-style: none;
-	text-align: left;
-	margin-top: 20px;
-}
-
-ul.links a {
-	text-decoration: none;
-}
-ul.links a:hover {
-	text-decoration: underline;
-}
-ul.links a:visited {
-	color: #333;
-}
-ul.links li >a:hover {
-	background: yellow;
-}
-
-ul.socialmedia {
-	list-style: none;
-}
-
 
 /* animation */
 @keyframes square-animation {
@@ -141,11 +117,17 @@ ul.socialmedia {
 	animation-duration: 1.8s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-	width: 150px;
-	height: 150px;
+	width: 180px;
+	height: 180px;
 	position: absolute;
 	right: 10%;
 	border-radius: 100px;
 	transform-origin: 100,0;
 }
 
+@media (max-width: 600px) {
+	.square {
+		width: 100px;
+		height: 100px;
+	}
+}

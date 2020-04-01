@@ -1,4 +1,11 @@
 /* portfolio */
+p {
+	line-height: 1.4em;
+}
+:visited {
+	color: inherit;
+}
+
 h1.contents-title {
 	font-size: 2em;
 	font-family: 'Courier New', Courier, monospace;
@@ -23,16 +30,29 @@ h2 {
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
+.skill li {
+	text-align: left;
+	font-size: 1.1em;
+	line-height: 1.4em;
+}
+
 .right {
-	text-align: right;
+	text-align: center;
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	bottom: 80px;
+	right: 30px;
+	border-radius: 5px;
+	background: rgb(38, 0, 255);
+	padding: 30px;
 }
 .right a{
-	padding: 10px 20px 10px 20px;
-	font-weight: 600;
-	color: #333;
-	background: rgba(255, 238, 0, 0.6)
+	font-weight: 500;
+	color: rgb(255, 226, 215);
+	padding-bottom: 20px;
 }
-.right a:hover{
+.right:hover{
 	background-color: rgba(42, 145, 51, 0.6);
 }
 h3 {
@@ -48,10 +68,7 @@ h3 {
 	justify-content: center;
 	margin-top: 60px;
 }
-#category-container {
-	margin-top: 2em;
-	text-align: center;
-}
+
 .box {
     box-sizing: border-box;
     width: 250px;
@@ -62,79 +79,22 @@ h3 {
     max-width: 100%;
 	border: 15px solid transparent;
 }
-
-.scale-anm {
-  transform: scale(1);
+@media (max-width: 600px) {
+	#container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	.box {
+		box-sizing: border-box;
+		width: 150px;
+		height: auto;    
+		position: relative;
+		display: inline-block;
+		justify-content: flex-start;
+		max-width: 100%;
+		border: 15px solid transparent;
+	}
 }
-
-
-.image {
-	position: absolute;
-    width: 100%;
-	height: 100%;
-	left: 0;
-}
-
-.box:hover .overlay {
-	display: block;
-	background: rgba(0, 0, 0, 0.3);
-}
-
-.overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0);
-	transition: background 0.5s ease;
-  }
-  .gallery-title {
-	opacity: 0%;
-	position: absolute;
-	width: 220px;
-	right: 0;
-	top: 80px;
-	font-weight: 700;
-	font-size: 1.5em;
-	text-align: center;
-	text-transform: uppercase;
-	color: white;
-	z-index: 1;
-	transition: top .5s ease;
-  }
-  .box:hover .gallery-title {
-	  opacity: 100%;
-	  top: 50px;
-  }
-  .gallery-button {
-	position: absolute;
-	width: 220px;
-	left: 0;
-	bottom: 80px;
-	text-align: center;
-	opacity: 0;
-	transition: opacity .35s ease;
-  }
-
-  .gallery-button a {
-	width: 120px;
-	padding: 8px 15px 8px 15px;
-	font-weight: 600;
-	text-decoration: none;
-	text-align: center;
-	color: white;
-	border: solid 2px white;
-	border-radius: 5px;
-	z-index: 1;
-  }
-
-  .box:hover .gallery-button {
-	opacity: 1;
-  }
-
-  .skill li {
-	  text-align: left;
-	  font-size: 1.1em;
-	  line-height: 1.2em;
-  }
