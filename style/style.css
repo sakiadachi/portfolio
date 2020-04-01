@@ -41,7 +41,15 @@ header {
 	margin-bottom: 50px;
 	padding-top: 20px;
 }
-
+.right {
+	text-align: center;
+	width: 300px;
+	height: 50px;
+	border-radius: 5px;
+	background: rgb(38, 0, 255);
+	padding: 30px;
+	margin-top: 30px ;
+}
 
 #about {
 	grid-area: 3 / 1 / 4 / 5;
@@ -79,7 +87,7 @@ footer {
 	body {
 		display: grid;
 		grid-template-columns: 20px repeat(2, 0.6fr) 1fr 20px;
-		grid-template-rows: 120px 1fr 1fr 100px;
+		grid-template-rows: 120px 0.4fr 1fr 100px;
 	}
 	/* Header */
 	header {
@@ -91,12 +99,23 @@ footer {
 	#top {
 		grid-area: 2 / 2 / 3 / 6;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		flex-wrap: nowrap;
 	}
 	#about {
-		grid-area: 3 / 3 / 4 / 5;
+		grid-area: 3 / 2 / 4 / 5;
 		margin-top: 0;
+	}
+	.right {
+		text-align: center;
+		width: 300px;
+		height: 50px;
+		position: absolute;
+		right: 30px;
+		border-radius: 5px;
+		background: rgb(38, 0, 255);
+		padding: 30px;
+		margin-top: 30px ;
 	}
 	.about-container {
 		display: flex;
@@ -104,11 +123,28 @@ footer {
 	}
 	.about-text {
 		width: 100%;
-		/* display: flex;
-		flex-direction: row; */
+		display: flex;
+		flex-direction: column;
 		text-align: left;
 		padding: 10px;
 		justify-content: space-evenly;
+	}
+	#container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	.box {
+		box-sizing: border-box;
+		width: 150px;
+		height: auto;    
+		position: relative;
+		display: inline-block;
+		justify-content: flex-start;
+		max-width: 100%;
+		border: 15px solid transparent;
 	}
 	footer {
 		grid-area: 4 / 1 / 5 / 6;
