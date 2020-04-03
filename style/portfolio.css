@@ -24,6 +24,7 @@ h2 {
 	color: rgb(0, 72, 139);
 	margin-bottom: 10px;
 	margin-top: 10px;
+	text-decoration: underline dotted;
 }
 .skill li {
 	text-align: left;
