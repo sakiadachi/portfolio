@@ -5,13 +5,12 @@ li.icon {
 	border: 10px solid transparent;
 }
 
-img.icon {
-	width: 30px;
-	height: 0px;
-}
 footer >a {
 	font-size: 1em;
 	color: rgb(83, 83, 83);
 	text-decoration: none;
 	position: relative;
+}
+a:visited {
+	color: #333
 }

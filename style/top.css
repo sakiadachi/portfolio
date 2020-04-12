@@ -106,13 +106,13 @@ ul.top-links a {
 	justify-content: flex-end;
 }
   .right {
-	text-align: center;
-	width: 100%;
+	/* position: relative;
+	left: 30px; */
+	width: 60%;
 	height: 50px;
 	border-radius: 5px;
 	background: rgb(38, 0, 255);
 	padding: 30px;
-
 	margin-top: 30px ;
     }
 }

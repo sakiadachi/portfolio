@@ -5,15 +5,17 @@
 @import url("portfolio.css");
 @import url("footer.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
 html {
 	scroll-behavior: smooth;
 }
 body {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 50px 0.5fr 1fr 0.2fr;
+	grid-template-rows: 50px 0.3fr 0.5fr 1fr 200px;
 	width: 100%;
-	font-family: 'Futura', sans-serif;;
+	font-family: 'Roboto', sans-serif;;
 	color: #333;
 	margin: 0;
 	padding: 5px 5px 10px 5px;
@@ -62,13 +64,24 @@ header {
 	height: auto;
 }
 
-#container {
+/*portfolio */
+
+section#portfolio {
+	grid-area: 4 / 1 / 5 / 5;
+	display: flex;
+	flex-direction: column;
+	margin: 50px 10px 10px 10px;
+}
+
+
+
+.skill-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 footer {
-	grid-area: 4 / 1 / 5 / 2;
+	grid-area: 5 / 1 / 6 / 2;
 	display: flex;
 	flex-direction: column;
 	background-color:#ddd;
@@ -83,7 +96,7 @@ footer {
 	body {
 		display: grid;
 		grid-template-columns: 20px repeat(2, 0.6fr) 1fr 20px;
-		grid-template-rows: 120px 0.5fr 1fr 100px;
+		grid-template-rows: 120px 0.3fr 0.5fr 1fr 200px;
 	}
 	/* Header */
 	header {
@@ -114,7 +127,7 @@ footer {
 		flex-direction: column;
 		text-align: left;
 	}
-	#container {
+	.skill-container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -130,8 +143,11 @@ footer {
 		max-width: 100%;
 		border: 15px solid transparent;
 	}
+	#portfolio {
+		grid-area: 4 / 2 / 5 / 5;
+	}
 	footer {
-		grid-area: 4 / 1 / 5 / 6;
+		grid-area: 5 / 1 / 6 / 6;
 	}
 }
 
@@ -140,7 +156,7 @@ footer {
 	body {
 		display: grid;
 		grid-template-columns: 60px repeat(2, 0.6fr) 1fr 60px;
-		grid-template-rows: 150px 0.8fr 1fr 0.5fr;
+		grid-template-rows: 150px 0.3fr 0.4fr 1fr 0.3fr;
 	}
 	/* Header */
 	header {
@@ -168,14 +184,19 @@ footer {
 		display: flex;
 		flex-direction: row;
 	}
-	#container {
+	.skill-container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-evenly;
 	}
+	#portfolio {
+		grid-area: 4 / 2 / 5 / 5;
+		margin-bottom: 80px;
+		margin-top: 80px;
+	}
 	footer {
-		grid-area: 4 / 1 / 65/ 6;
+		grid-area: 5 / 1 / 6 / 6;
 		display: flex;
 		flex-direction: column;
 		margin-top: 80px;
@@ -184,3 +205,13 @@ footer {
 }
 
 
+h1 {
+    text-decoration: underline 2px solid;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+}

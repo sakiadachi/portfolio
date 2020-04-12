@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/blog.css">
+    <script src="https://kit.fontawesome.com/171bea6e48.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top  navbar-dark">
+            <a class="navbar-brand" href="#">sa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="aside">
+        <div class="col">
+            <h4>Portfolio</h4>
+            <ul class="aside">
+                <li class="contents"><a href="blog-single.html">Project name</a></li>
+                <li class="contents"><a href="blog-single.html">Project name</a></li>
+                <li class="contents"><a href="blog-single.html">Project name</a></li>
+            </ul>
+        </div>
+    </div>
+
+        <section id="portfolio">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+
+                        <p class="mb-5">
+                            <img src="../img/travelapp/travelapp.png" alt="travel app img 01" class="img-fluid">
+                        </p>
+                        <h1 class="mb-4">
+                        Travel Journal app
+                        </h1>
+                        <div class="post-meta d-flex mb-5">
+                            <div class="vcard">
+                                <span class="category">Personal project<span class="mx-1">&bullet;</span> Frontend development</span>
+                                <p><a href="https://github.com/sakiadachi/Travelapp" alt="git page">github</a>
+                                    <a href="https://travelapp-sa.netlify.com/" alt="git page">web</a></p>
+
+                                
+                                    <span class="grey">overview</span>
+                                    <p>Enter your travel destination and date, Travel Journal App returns weather forecast of the location on the date you entered.
+                                        Besides showing you predicted weather and remained days to your trip, you can make ToDo list for your reminder.
+                                    </p>
+                            </div>
+                        </div>
+
+                        <h3>Mood board</h3>
+
+                        <p>Design derives from handwriting, notes and journal. Travel is to make a memory with a organizing.</p>
+                        
+                        <img src="../img/travelapp/travellapp-moodboard.png" alt="moodboard" class="img-fluid">
+
+                        <h3>Design theme</h3>
+                        <p>Typography: <span class="Typography">'Montserrat', sans-serif</span></p>
+                        <ul class="color">
+                            <li><div class="color01"></div></li>
+                            <li><div class="color02"></div></li>
+                            <li><div class="color03"></div></li>
+                            <li><div class="color04"></div></li>
+                        </ul>
+                        <p>The design idea comes from remembering feeling of satisfaction when you look at an organized notebook and notes highlighted by red and blue color pens.
+                           Horizontal line devides sections and your entry on the page. </p>
+
+                        <h5>Development</h5>
+                        <img src="../img/travelapp/ramework.jpg" alt="framework" class="img-grid">
+
+
+                    
+
+
+
+
+                        <h3>Customer persona</h3>
+                        <img src="#" alt="persona" class="img-fluid">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit officia neque beatae at inventore excepturi numquam sint commodi alias, quam consequuntur corporis ex, distinctio eaque sapiente pariatur iure ad necessitatibus in quod obcaecati natus consequatur. Sed dicta maiores, eos culpa.</p>
+                        <p>Voluptatum animi, voluptate sint aperiam facere a nam, ex reiciendis eum nemo ipsum nobis, rem illum cupiditate at quaerat amet qui recusandae hic, atque laboriosam perspiciatis? Esse quidem minima, voluptas necessitatibus, officia culpa quo nulla, cupiditate iste vel unde magni.</p>
+                        <p>Nulla nesciunt eligendi ratione, atque, hic, ullam suscipit quos enim vitae fugiat ducimus, dolore delectus iste id culpa. Ducimus, iste magnam sed reprehenderit architecto perferendis odio voluptas molestiae quidem ab numquam debitis, dolorem incidunt, tempore a quod qui nobis. Voluptates!</p>
+
+
+                        <h5>Working with web API</h5>
+                        <p>This app utilises three APIs based on the information user submitted (location and date of trip). The request to web APIs sent from server side code,
+                            then dynamically updating UI on client side in order to make API key's anonymous for users, by using "dotenv" module on npm.
+                        </p>
+
+                        <ul>
+                            <li>GeoNames API 
+                                <span><a href="https://www.geonames.org/export/web-services.html" alt="geonames">(api docs)</a></span>
+                                <p>Getting Longitude and Latitude of submitted location.</p>
+                            </li>
+                            <li>
+                                weatherbit API
+                                <span><a href="https://www.weatherbit.io/" alt="weatherbit">(website)</a></span>
+                                <p>Getting weather forecast based on the travel date and location you submitted on the browser.</p>
+                            </li>
+                            <li>
+                                pixabay API
+                                <span><a href="https://pixabay.com/api/docs/" alt="weatherbit">(api docs)</a></span>
+                                <p>Getting image of a travel destination.</p>
+                            </li>
+                        </ul>
+
+
+
+
+                        <h3>What I can improve: </h3>
+
+
+                        <video width="640" height="480" controls>
+                            <source src="../img/travelapp/travelapp-video.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                          </video>
+
+                        
+
+                    </div>
+                </div>
+
+       </section>
+
+        <footer id="contact">
+            <div>
+                <h4>Any project working with you? Get in touch with me.</h4>
+            </div>
+            <ul class="top-links">
+                <li><a href="mailto:sakiadachi.88@gmail.com" title="email" target="_blank">sakiadachi.88@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/saki-adachi/" title="linkedin" target="_blank">CV: Linkedin</a></li>
+                <li><a href="https://www.behance.net/sakiadachi1" title="behance" target="_blank">Behance</a></li>
+                <li><a href="https://github.com/sakiadachi" title="github" target="_blank">Github</a></li>
+                <li><a href="https://www.instagram.com/88sa_88/" title="instagram" target="_blank">Instagram</a></li>
+            </ul>
+            <a href="#Top">
+                <p>©️ Saki Adachi</p>
+            </a>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
