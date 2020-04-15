@@ -26,6 +26,10 @@ h2 {
 	margin-top: 10px;
 	text-decoration: underline dotted;
 }
+hr {
+	border: none;
+	border-top: 1px dotted rgb(138, 138, 138);
+}
 .skill li {
 	text-align: left;
 	font-size: 1.1em;
@@ -89,7 +93,14 @@ h3 {
 }
 
 
-/* .img-fluid{
-	width: 700px;
-	height: 300px;
-} */
+a.btn {
+	border: none;
+	text-decoration: none;
+	border: #333 2px solid;
+	text-decoration: underline #333 1px solid;
+	margin-top: 10px;
+}
+
+a.btn:hover {
+	background-color: rgb(255, 237, 78);
+}

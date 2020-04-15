@@ -44,7 +44,6 @@ ul.top-links a {
 	text-decoration: underline;
 }
 
-
 @media (max-width: 600px) {
 	.top-container {
 		width: 100%;
@@ -90,13 +89,13 @@ ul.top-links a {
 @keyframes square-animation {
 	from {
 	    background: #ebc82b;
-		transform: translateY(100%);
+		/* transform: translateY(100%); */
 		
 	}
   
 	to {
 		background: #d43824;
-	  transform: translateY(50%);
+	  /* transform: translateY(50%); */
 	  transition-duration: 3s;
 	}
   }
@@ -154,6 +153,7 @@ ul.top-links a {
 		width: 160px;
 		height: 160px;
 		position: absolute;
+		top: 120px;
 		right: 10%;
 		border-radius: 100px;
 		transform-origin: 100,0;
@@ -162,18 +162,18 @@ ul.top-links a {
 @keyframes square-animation {
 		from {
 			background: #ebc82b;
-			transform: translateY(80px);
+			/* transform: translateY(80px); */
 			
 		}
 	
 		to {
 		background: #d43824;
-		transform: translateY(240px);
+		/* transform: translateY(240px); */
 		transition-duration: 4s;
 	}
   }
   .right {
-		width: fit-content;
+		width: 300px;
 		height: 50px;
 		border-radius: 5px;
 		background: rgb(38, 0, 255);
@@ -220,24 +220,25 @@ ul.top-links a {
 		animation-duration: 1.8s;
 		animation-iteration-count: infinite;
 		animation-direction: alternate;
-		width: 200px;
-		height: 200px;
+		width: 210px;
+		height: 210px;
 		position: absolute;
+		top: 160px;
 		right: 10%;
-		border-radius: 100px;
+		border-radius: 105px;
 		transform-origin: 100,0;
 	}
 	/* animation */
 @keyframes square-animation {
 	from {
 	    background: #ebc82b;
-		transform: translateY(80px);
+		/* transform: translateY(80px); */
 		
 	}
   
 	to {
 		background: #d43824;
-	  transform: translateY(260px);
+	  /* transform: translateY(260px); */
 	  transition-duration: 3s;
 	}
   }
